@@ -3,3 +3,6 @@ Créez des scénarios de tâches à exécuter par A.V.A.T.A.R en utilisant les a
 Vous disposez d'une interface intelligente pour vous permettre de créer facilement vos scénarios et il vous permet aussi de les gérer entièrement par règles vocales.
 
 Essayer, c'est l'adopter !
+
+
+
