@@ -36,7 +36,7 @@ Il vous permet aussi de gérer ces scénarios par règles vocales:
 ***
 ## ★ Configuration et utilisation
 * Ouvrez le Plug-in Studio A.V.A.T.A.R
-* Cliquez sur l'icône du plug-in eeDomus
+* Cliquez sur l'icône du plug-in scenariz
 * Dans son menu déroulant, cliquez sur _Documentation_
 
 ***
