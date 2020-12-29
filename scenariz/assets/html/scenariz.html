@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./node_modules/xel/themes/material.css"/>
+    <script src="./node_modules/xel/xel.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./scenariz.css">
+  </head>
+  <body>
+    <div id="divLeft">
+      <div id="CY"></div>
+    </div>
+    <div id="divRight">
+      <div id="divRightTop">
+        <div id="WFCY"></div>
+      </div>
+      <div id="divRightBottom">
+        <div id="actionbar">
+          <x-button class="inline tooltip" id="addprogram">
+            <x-icon name="menu"></x-icon>
+            <span class="tooltiptext">Cliquez içi pour créer un scénario</span>
+          </x-button>
+          <x-button class="inline tooltip" id="deleteprogram">
+            <x-icon name="new-releases"></x-icon>
+            <span class="tooltiptext">Cliquez içi pour supprimer le scénario sélectionné</span>
+          </x-button>
+          <x-button class="inline tooltip" id="addnewaction">
+            <x-icon name="autorenew"></x-icon>
+            <span class="tooltiptext">Cliquez içi pour ajouter un nouvel arbre de tâches</span>
+          </x-button>
+          <x-button class="inline tooltip" id="addaction">
+            <x-icon name="create"></x-icon>
+            <span class="tooltiptext">Cliquez içi pour ajouter une nouvelle tâche à l'arbre sélectionné</span>
+          </x-button>
+          <x-button class="inline tooltip" id="modifyaction">
+            <x-icon name="track-changes"></x-icon>
+            <span class="tooltiptext">Cliquez içi pour modifier la tâche sélectionnée</span>
+          </x-button>
+          <x-button class="inline tooltip" id="removeaction">
+            <span class="tooltiptext">Cliquez içi pour supprimer la tâche sélectionnée</span>
+            <x-icon name="delete"></x-icon>
+          </x-button>
+        </div>
+
+        <div id="actioninfos">
+          <x-label class="label-min" id="labelscenario">Scénario</x-label>
+          <x-input required id="scenario">
+            <x-label></x-label>
+          </x-input>
+
+          <x-label class="label-min" id="labeltask">Tâche</x-label>
+          <x-input required id="task">
+            <x-label></x-label>
+          </x-input>
+
+          <x-label class="label-min" id="labelclient">Client</x-label>
+          <x-select id="client">
+            <x-menu id="menu-client">
+              <x-menuitem value="Sélectionnez un client" id="selection"><x-label class="small_size">Sélectionnez un client</x-label></x-menuitem>
+              <hr>
+            </x-menu>
+          </x-select>
+          <x-label id="noroom"></x-label>
+
+          <x-label class="label-min" id="labelplugin">Plugin</x-label>
+          <x-select id="plugin">
+            <x-menu id="menu-plugin">
+              <x-menuitem value="Sélectionnez un plugin" id="plugin-selection"><x-label class="small_size">Sélectionnez un plugin</x-label></x-menuitem>
+              <hr>
+            </x-menu>
+          </x-select>
+          <x-label id="noplugin"></x-label>
+
+          <x-label class="label-min" id="labelorder">Position</x-label>
+          <x-input disabled id="order">
+            <x-label>1</x-label>
+          </x-input>
+
+
+          <x-label class="label-min" id="labeltemporisation">Temporisation</x-label>
+          <x-input id="temporisation">
+            <x-label>1000</x-label>
+          </x-input>
+
+          <x-label class="label-min" id="labeltype">Exécution</x-label>
+          <x-select id="type">
+            <x-menu id="menutype">
+              <x-menuitem id="cron" value="Par Cron">
+                <x-icon name="flash-auto"></x-icon>
+                <x-label>Par Cron</x-label>
+              </x-menuitem>
+              <x-menuitem id="appel" value="Par règle vocale">
+                <x-icon name="surround-sound"></x-icon>
+                <x-label>Par règle vocale</x-label>
+              </x-menuitem>
+            </x-menu>
+          </x-select>
+
+          <x-label class="label-min" id="labelspeech">Phrase vocalisée par Avatar</x-label>
+          <x-input id="speech">
+            <x-label></x-label>
+          </x-input>
+
+          <x-label class="label-min" id="labelkey">Paramètres d'exécution</x-label>
+          <x-input id="key">
+            <x-label></x-label>
+          </x-input>
+          <x-button id="testKey">
+            <x-label id="labeltestKey">Tester</x-label>
+          </x-button>
+
+          <x-label class="label-min" id="labelhour">Heure</x-label>
+          <x-input id="hour">
+            <x-label>HH:mm</x-label>
+          </x-input>
+
+          <x-label class="label-min" id="labelday">Jours</x-label>
+          <x-input id="day">
+            <x-label>1111111</x-label>
+          </x-input>
+
+          <x-label class="label-max" id="infos">Paramètres <br>de la tâche</x-label>
+
+          <div id="createtask">
+              <x-label id="labelcreatetask">Completez les informations de la tâche puis cliquez sur le bouton "Créer"</x-label>
+              <x-button id="create">
+                  <x-label>Créer</x-label>
+              </x-button>
+          </div>
+
+          <div id="createnewtask">
+              <x-label id="labelcreatenewtask">Completez les informations de la tâche puis cliquez sur le bouton "Créer"</x-label>
+              <x-button id="createnew">
+                  <x-label>Créer</x-label>
+              </x-button>
+          </div>
+
+          <div id="createscenariz">
+              <x-label id="labelcreatescenariz">Completez les informations de la première tâche du scénario puis cliquez sur le bouton "Créer"</x-label>
+              <x-button id="createscenario">
+                  <x-label>Créer</x-label>
+              </x-button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <x-notification id="notification"></x-notification>
+    <x-notification id="notification_small"></x-notification>
+
+    <script>
+        require('./scenariz.js');
+    </script>
+  </body>
+</html>

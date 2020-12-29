@@ -1,0 +1,5 @@
+Créez des scénarios de tâches à exécuter par A.V.A.T.A.R en utilisant les actions des plug-ins et ceci sans aucun développement !
+
+Vous disposez d'une interface intelligente pour vous permettre de créer facilement vos scénarios et il vous permet aussi de les gérer entièrement par règles vocales.
+
+Essayer, c'est l'adopter !

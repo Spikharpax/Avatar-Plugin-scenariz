@@ -1,0 +1,443 @@
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    background: #FFFFFF;
+    font: 12px sans-serif;
+    overflow: hidden;
+    outline:  0;
+}
+
+
+#divLeft {
+  float: left;
+  width: 100px;
+  height: 100%;
+  background-color: #d0d3d4;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0 0 0 0;
+}
+
+::-webkit-scrollbar {
+  -webkit-overflow-scrolling: touch;
+  background-color: #F8E6E0;
+  width: 1rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #F79F81;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #FF4000;
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: #B40404;
+}
+
+#CY {
+  margin: 0 0 0 0;
+  float: left;
+  width: 94%;
+  height: 100%;
+  cursor: pointer;
+}
+
+
+#WFCY {
+  top: 0px;
+  left: 0px;
+  float: left;
+  width: 850px;
+  height: 305px;
+}
+
+#divRight {
+  position: fixed;
+  top: 0px;
+  left: 100px;
+  width: 100% - 100px;
+  height: 100%;
+  display: block;
+}
+
+#divRightTop {
+  position: fixed;
+  top: 0px;
+  left: 100px;
+  width: calc(100% - 100px);
+  height: 50%;
+  overflow:auto;
+}
+
+#divRightBottom {
+  position: fixed;
+  top: 50%;
+  left: 100px;
+  width: calc(100% - 100px);
+  height: 50%;
+}
+
+#newaction {
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+  align-content: center;
+  cursor: pointer;
+  background-color: white;
+  background-image: url(../images/plus.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#addaction {
+  display:none;
+}
+
+#addnewaction {
+  display:none;
+}
+
+#modifyaction {
+  display:none;
+}
+
+#removeaction {
+  display:none;
+}
+
+#actionbar {
+  width: 100%;
+  height: 35px;
+  border-style: solid;
+  border-width: thin;
+  display: inline-block;
+  position: relative;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 80px;
+    top: -100%;
+    left: 100%;
+    background-color: #EFECCA;
+    color: #4C1B1B;
+    text-align: center;
+    text-transform: lowercase;
+    padding: 5px 0;
+    border-radius: 6px;
+    margin-left: 3px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #EFECCA transparent transparent transparent;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 40%;
+    right: 105%;
+    margin-left: 20px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #EFECCA transparent transparent;
+}
+
+.tooltip:hover {
+    cursor: pointer;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+.label-min {
+  text-align: left;
+  position: absolute;
+  font-family: "Lucida Grande";
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+}
+
+#actioninfos {
+  position: relative;
+  width: inherit;
+  height: inherit;
+}
+
+#labelscenario {
+  top: 25px;
+  left: 150px;
+}
+x-input#scenario {
+  height: 25px;
+}
+x-input#scenario::before {
+  top: 25px;
+}
+#scenario {
+  top: 40px;
+  left: 150px;
+}
+
+
+#labeltask {
+  top: 90px;
+  left: 150px;
+}
+x-input#task {
+  height: 25px;
+}
+x-input#task::before {
+  top: 25px;
+}
+#task {
+  position: relative;
+  top: 80px;
+  left: 150px;
+  max-width: 270px;
+}
+
+
+#labelclient {
+  top: 25px;
+  left: 350px;
+}
+#client {
+  position:inherit;
+  top: -10px;
+  left: 350px;
+  height: 25px;
+  width: 180px;
+  max-width: 180px;
+  font-size: 12px;
+}
+#menu-client {
+  position:relative;
+  width: 180px;
+  max-width: 180px;
+  font-size: 12px;
+}
+
+
+
+#labelplugin {
+  top: 155px;
+  left: 150px;
+}
+#plugin {
+  position:inherit;
+  top: 95px;
+  left: 150px;
+  height: 25px;
+  width: 180px;
+  max-width: 180px;
+  font-size: 12px;
+}
+#menu-plugin {
+  position:relative;
+  width: 180px;
+  max-width: 180px;
+  font-size: 12px;
+}
+
+#labelorder {
+  top: 25px;
+  left: 580px;
+}
+#order {
+  position:inherit;
+  top: -60px;
+  left: 580px;
+  height: 25px;
+  max-width: 50px;
+}
+
+
+
+
+#labeltemporisation {
+  top: 25px;
+  left: 680px;
+}
+#temporisation {
+  position:inherit;
+  top: -85px;
+  left: 680px;
+  max-width: 75px;
+  height: 25px;
+}
+
+
+
+#labeltype {
+  top: 90px;
+  left: 450px;
+}
+#type {
+  position:relative;
+  top: -45px;
+  left: 450px;
+  height: 25px;
+  width: 175px;
+  font-size: 12px;
+}
+#menutype {
+  position:relative;
+  width: 180px;
+  max-width: 180px;
+  font-size: 12px;
+}
+
+
+
+#labelspeech {
+  top: 220px;
+  left: 150px;
+}
+#speech {
+  top: 60px;
+  left: 150px;
+  max-width: 680px;
+  height: 25px;
+}
+
+
+#labelkey {
+  top: 155px;
+  left: 350px;
+}
+#key {
+  top: -30px;
+  left: 350px;
+  height: 25px;
+  max-width: 390px;
+}
+
+#testKey {
+  position: relative;
+  top: -55px;
+  left: 750px;
+  min-height: 25px;
+  width: 80px;
+}
+
+
+#labelhour {
+  top: 90px;
+  left: 660px;
+}
+#hour {
+  top: -145px;
+  left: 660px;
+  max-width: 70px;
+  height: 25px;
+}
+
+
+#labelday {
+  top: 90px;
+  left: 740px;
+}
+#day {
+  top: -170px;
+  left: 740px;
+  max-width: 90px;
+  height: 25px;
+}
+
+
+.label-max {
+  top: -240px;
+  left: 20px;
+  text-align: left;
+  position: relative;
+  font-family: "Lucida Grande";
+  font-size: 20px;
+  font-weight: bold;
+  color: gray;
+  width: 100px;
+}
+
+
+#createtask, #createscenariz, #createnewtask {
+  position:relative;
+  top: -220px;
+  left: 15px;
+  height: 175px;
+  width: 130px;
+  display: none;
+}
+
+#labelcreatetask, #labelcreatescenariz, #labelcreatenewtask {
+  text-align:center;
+  position: relative;
+  font-family: "Lucida Grande";
+  font-size: 12px;
+  width: 100px;
+  color: black;
+  font-weight: bold;
+}
+
+#create, #createscenario, #createnew {
+  top: 10px;
+  left: 10px;
+  position: relative;
+  text-align:center;
+  position: relative;
+}
+
+
+.small_size {
+  font-size: 12px;
+}
+
+#noplugin {
+  position:fixed;
+  top: 545px;
+  left: 250px;
+  height: 15px;
+  width: 150px;
+  max-width: 150px;
+  font-size: 11px;
+  color: red;
+  display: none;
+}
+
+
+#noroom {
+  position:fixed;
+  top: 415px;
+  left: 450px;
+  height: 15px;
+  width: 150px;
+  max-width: 150px;
+  font-size: 11px;
+  color: red;
+  display: none;
+}
+
+
+#notification_small {
+  font-size: 12px;
+}
+
+#notification {
+  font-size: 14px;
+}

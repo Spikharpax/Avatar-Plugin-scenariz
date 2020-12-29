@@ -1,0 +1,527 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 5.9.1.788">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Comment fonctionne un sc&eacute;nario ?</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Comment fonctionne un sc&eacute;nario ?">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Comment fonctionne un sc&eacute;nario ?" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Scenariz" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.3.6/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.2/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.2/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Scenariz</h1>
+    
+  </header>
+
+  <nav class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Commentfonctionneunscenario"
+		  data-hnd-context="7"
+		  data-hnd-title="Comment fonctionne un scénario ?"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Interface &quot;Gestion des sc&eacute;narios&quot;</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="LaregleGestiondesprogrammes.html" title="La r&egrave;gle &quot;Gestion des programmes&quot;" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Utilisation.html" title="Utilisation" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Comment fonctionne un sc&eacute;nario ?</h2>
+
+            <div class="main-content">
+                
+<p></p>
+<p class="rvps2"><span class="rvts6">Un scénario est constitué d'arbre(s) de tâche(s) à exécuter les unes après les autres dans un ordre séquentiel et à une heure donnée. Chaque tâche est définie par une série de paramètres et déclenche une action d'un plug-in A.V.A.T.A.R.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps9"><img alt="" style="padding : 1px;" src="lib/NouvelElement12.png"></p>
+<h6 class="rvps8"><span class="rvts0"><span class="rvts23">Les arbres de tâches</span></span></h6>
+<p class="rvps2"><span class="rvts6">Un arbre de tâches est défini par l'heure d'exécution que vous choisissez pour la 1ere tâche de l'arbre. </span></p>
+<p class="rvps2"><span class="rvts6">Il n'y a aucune limite au nombre d'arbre de tâches dans un scénario.</span></p>
+<p class="rvps2"><span class="rvts6">Toutes les tâches suivantes dans cet arbre auront la même heure d'exécution, vous pouvez néanmoins définir une temporisation (en milli-secondes) entre chaque tâche de l'arbre si vous le désirez.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts17">Prenons un exemple simple:</span></p>
+<p class="rvps2"><span class="rvts6">Supposons un réveil (comme l'image ci-dessus) qui exécute un série de tâches à une heure donnée, par exemple 7h30mn, puis une autre tâche 20 minutes après.</span></p>
+<p class="rvps2"><span class="rvts6">Il ne serait pas judicieux de créer une temporisation de 20 minutes après la dernière tâche de l'arbre 1 puisque les scénarios sont recherchés et exécutés toutes les 5 minutes. Idéalement, on crée un arbre 2 et on lui donne comme heure d'exécution 7h50mn</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">N'ayez crainte, toutes ces tâches font parties du même scénario, elles seront modifiées ensemble lorsque vous le modifierez vocalement par la règle "</span><span class="rvts14">Gestion des programmes</span><span class="rvts6">". Par exemple, si vous modifiez l'heure d'exécution d'un scénario et y ajouté vocalement 10 minutes, alors tous les arbres du scénario seront modifiés, ce qui deviendra pour l'arbre 1: 7h40m et pour l'arbre 2: 8h00mn, ou encore si vous le désactivez, le scénario complet sera désactivé.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts20">A savoir:</span></p>
+<p class="rvps2"><span class="rvts6">La recherche et l'exécution automatique des scénarios est définie toutes les 5 minutes afin de ne pas trop surcharger l'application.</span></p>
+<p class="rvps2"><span class="rvts6">Scenariz tient compte des minutes entre les multiples de 5 et fait en sorte de les gérer:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><span class="rvts6">De 0 à 4, la minute d'exécution est ramenée au multiple précédent</span></li>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+<li class="rvps2"><span class="rvts6">ex: 7h 34 minutes est ramené automatiquement à 7h30</span></li>
+</ul>
+<li class="rvps2"><span class="rvts6">De 5 à 9, la minute d'exécution est ramenée au multiple suivant</span></li>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+<li class="rvps2"><span class="rvts6">ex: 7h 36 minutes est amené automatiquement à 7h40</span></li>
+</ul></ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Par conséquent, il est préférable de définir des heures d'exécution avec des multiples de 5</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Autre conséquence, le minimum de différence d'heure d’exécution entre</span><span class="rvts20"> chaque arbre</span><span class="rvts6"> d'un scénario est de </span><span class="rvts20">5 minutes</span><span class="rvts6">.</span></p>
+<p class="rvps2"><span class="rvts6">Par exemple:</span></p>
+<p class="rvps9"><span class="rvts6">Arbre 1 =&gt; 7h30</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Arbre 1=&gt; 7h30</span></p>
+<p class="rvps9"><span class="rvts6">Arbre 2 =&gt; 7h35</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Arbre 2=&gt; 7h34</span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; </span><span class="rvts19">BON</span><span class="rvts17"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts17"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts17"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts17"> &nbsp; &nbsp;</span><span class="rvts21">PAS BON</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<h6 class="rvps8"><span class="rvts0"><span class="rvts23">Les tâches</span></span></h6>
+<p class="rvps2"><span class="rvts6">L'interface intelligente vous guide et suivant les cas de figures, les paramètres des tâches sont modifiables ou non.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; </span><img width="703" height="216" alt="" style="padding : 1px;" src="lib/NouvelElement13.png"></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Ci-dessous le tableau de tous les paramètres d'une tâche et leurs descriptions:</span></p>
+<div class="rvps2"><table border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid; background-color: #ffffff; border-spacing: 2px;">
+<tr valign="top">
+<td width="192" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts17">Paramètre</span></p>
+</td>
+<td width="670" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps3"><span class="rvts17">Description</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="192" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Scénario</span></p>
+</td>
+<td width="670" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Pour un scénario existant (non modifiable): Le nom du scénario</span></p>
+<p class="rvps2"><span class="rvts17">ou</span></p>
+<p class="rvps2"><span class="rvts6">Entrez un nom de scénario</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="192" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Client</span></p>
+</td>
+<td width="670" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Liste tous les clients connectés à A.V.A.T.A.R</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Le client "Pièce courante" est associé à un capteur de présence et à l'activation des capteurs dans les paramètres du serveur, onglet "</span><span class="rvts14">Interface</span><span class="rvts6">", voir aussi la variable </span><span class="rvts14">currentRoom</span><span class="rvts6"> dans la documentation de développement . La tâche sera alors exécutée dans la pièce courante lorsque celle-ci se déclenchera.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Choisissez le client associé à la tâche courante et utilisé pour exécuter le plugin.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="192" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Position</span></p>
+</td>
+<td width="670" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Pour information, la position de la tâche dans l'arbre de tâches.</span></p>
+<p class="rvps2"><span class="rvts6">Calculée automatiquement par l'application.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="192" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Temporisation</span></p>
+</td>
+<td width="670" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Une temporisation en milli-secondes pour exécuter la tâche suivante dans l'arbre de tâches.</span></p>
+<p class="rvps2"><span class="rvts6">Par défaut, la temporisation est de 1000ms (1 seconde)</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="192" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Tâche</span></p>
+</td>
+<td width="670" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Pour une tâche existante (non modifiable): Le nom de la tâche</span></p>
+<p class="rvps2"><span class="rvts17">ou</span></p>
+<p class="rvps2"><span class="rvts6">Pour une nouvelle tâche: Entrez un nom de tâche</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="192" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Exécution</span></p>
+</td>
+<td width="670" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts17">Par Cron:</span></p>
+<p class="rvps2"><span class="rvts6">Ce scénario est exécuté automatiquement à l'heure et aux jours définis. </span></p>
+<p class="rvps2"><span class="rvts6">Il peut être aussi exécuté directement par règle vocale.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts17">Par règle vocale:</span></p>
+<p class="rvps2"><span class="rvts6">Ce scénario est exécuté seulement par règle vocale </span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts17">Info:</span><span class="rvts6"> </span><a class="rvts24" href="AutresParametres.html">Comment ajouter une règle vocale pour un scénario</a></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="192" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Heure</span></p>
+</td>
+<td width="670" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">L'heure d'exécution de la tâche au format HH:mm</span></p>
+<p class="rvps2"><span class="rvts6">Toutes les tâches du même arbre de tâches ont la même heure d'exécution.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts17">Exemples:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><span class="rvts6">07:45</span></li>
+<li class="rvps2"><span class="rvts6">15:00</span></li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<td width="192" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Jours</span></p>
+</td>
+<td width="670" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Les jours d'exécution du scénario.</span></p>
+<p class="rvps2"><span class="rvts6">Toutes les tâches de tous les arbres de tâches du scénario ont les mêmes jours d'exécution.</span></p>
+<p class="rvps2"><span class="rvts17"><br/></span></p>
+<p class="rvps2"><span class="rvts17">Format:</span></p>
+<p class="rvps2"><span class="rvts6">7 chiffres (1 ou 0) pour une semaine, du lundi au dimanche:</span></p>
+<p class="rvps6"><span class="rvts6">1: actif</span></p>
+<p class="rvps6"><span class="rvts6">0: inactif</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts17">Exemples:</span></p>
+<p class="rvps2"><span class="rvts6">Scénario exécuté les jours de travail (du lundi au vendredi) : 1111100</span></p>
+<p class="rvps2"><span class="rvts6">Scénario exécuté le lundi, le mercredi et le samedi : 1010010</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Par défaut, les jours d'exécution sont pour toutes la semaine: 1111111</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="192" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Plugin</span></p>
+</td>
+<td width="670" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Liste tous les plugins activés et désactivés d'A.V.A.T.A.R</span></p>
+<p class="rvps2"><span class="rvts6">Icône associé à un plugin activé : </span><img alt="" style="padding : 1px;" src="lib/NouvelElement14.png"></p>
+<p class="rvps2"><span class="rvts6">Icône associé à un plugin désactivé : </span><img alt="" style="padding : 1px;" src="lib/NouvelElement15.png"></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Choisissez le plugin exécuté par la tâche courante.</span></p>
+<p class="rvps2"><span class="rvts17">Attention ! </span><span class="rvts6">Choisir un plugin désactivé ne fonctionne que si le plugin sera réactivé lorsque la tâche sera exécutée.</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="192" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Paramètres d'exécution</span></p>
+</td>
+<td width="670" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Les paramètres à envoyer au plugin.</span></p>
+<p class="rvps2"><span class="rvts6">Retrouvez ces paramètres dans le fichier js du plugin et pour l'action que vous voulez exécuter.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts17">Format:</span></p>
+<p class="rvps2"><span class="rvts6">Des paires </span><span class="rvts14">paramètre=value</span><span class="rvts6"> séparées par un tilde (~)</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts17">Exemple:</span></p>
+<p class="rvps2"><span class="rvts6">Un plugin à plusieurs actions et un séparateur d'actions </span><span class="rvts14">data.command</span><span class="rvts6"> dans la fonction </span><span class="rvts14">exports.action</span><span class="rvts6"> de son fichier js et un 2ème paramètre nécessaire </span><span class="rvts14">data.value:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+<li style="margin-left: 0px" class="rvps6"><span class="rvts14">command=switchLigth~value=1</span></li>
+</ul></ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Laisser le champ vide pour plugin qui ne nécessite aucune action et qui est exécuté directement.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Vous disposez d'un bouton "TEST" pour tester le plugin et vos paramètres d'exécution et vérifier dans la console d'A.V.A.TA.R d’éventuelles erreurs.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="192" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Phrase vocalisée par Avatar</span></p>
+</td>
+<td width="670" style="border-color: #000000; border-style: solid; padding: 1px;"><p class="rvps2"><span class="rvts6">Vous pouvez ajouter une phrase qui sera vocalisée par A.V.A.T.A.R après avoir exécuter l'action.</span></p>
+<h3 class="rvps7"><span class="rvts0"><span class="rvts15">Le séparateur @@:</span></span></h3>
+<p class="rvps2"><span class="rvts6">Découpe le texte en plusieurs. Le séparateur @@ permet de faire vocaliser votre textes par A.V.A.TA.R en plusieurs phrases pour que la diction soit plus normale. Utiliser alors @@ pour séparer les phrases, généralement après un point.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts17">Exemple:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+<li style="margin-left: 0px" class="rvps6"><span class="rvts14">Bonjour, ceci est un test pour savoir si ca fonctionne.@@Et maintenant une deuxième phrase !!</span></li>
+</ul></ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<h3 class="rvps7"><span class="rvts0"><span class="rvts15">Le caractère </span></span><span class="rvts0"><span class="rvts15">%s</span></span><span class="rvts0"><span class="rvts15">:</span></span></h3>
+<p class="rvps2"><span class="rvts6">Il existe un caractère de remplacement </span><span class="rvts17">%s</span><span class="rvts6"> si le plugin retourne une valeur à inclure dans la phrase.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts17">Exemple 1:</span></p>
+<p class="rvps2"><span class="rvts6">Supposons que vous voulez une phrase dans un réveil:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+<li style="margin-left: 0px" class="rvps6"><span class="rvts6">Bonjour, il est </span><span class="rvts14">&lt;heure&gt;, </span><span class="rvts6">il est l'heure de se réveiller !</span></li>
+</ul></ul>
+<p class="rvps2"><span class="rvts6">ou &lt;</span><span class="rvts14">heure</span><span class="rvts6">&gt; est à remplacer par l'heure courante.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Une fonction est déjà créée pour l'usage:</span></p>
+<p class="rvps2"><span class="rvts6">La fonction </span><span class="rvts22">setTime</span><span class="rvts6"> du module </span><span class="rvts17">scenariz</span><span class="rvts6"> qui retourne l'heure courante.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Il suffira donc d'ajouter une tâche comme ceci:</span></p>
+<p class="rvps2"><img width="629" height="102" alt="" style="padding : 1px;" src="lib/NouvelElement16.png"></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts17">Exemple 2:</span></p>
+<p class="rvps2"><span class="rvts6">Supposons maintenant que vous voulez ajouter une autre valeur vocalisée par un de vos plugin, le callback (obligatoire) généralement ajouté en fin de la fonction </span><span class="rvts14">exports.action </span><span class="rvts6">de votre plugin devra alors retourner cette valeur comme ceci:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;"><ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+<li style="margin-left: 0px" class="rvps6"><span class="rvts6">callback({'tts': </span><span class="rvts22">valeur</span><span class="rvts6">});</span></li>
+</ul></ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Ajoutez ensuite dans la tâche, votre phrase à vocaliser avec un </span><span class="rvts17">%s</span><span class="rvts6"> là où la valeur sera dite:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts17">Attention: </span></p>
+<p class="rvps2"><span class="rvts6">Si il y a plusieurs actions dans votre plugin, séparez les </span><span class="rvts14">callback</span><span class="rvts6">() des autres actions de votre plugin de celui qui retourne une valeur:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Si ma fonction qui retourne ma valeur est </span><span class="rvts14">'setValue' </span><span class="rvts6">alors je précise en fin de </span><span class="rvts14">exports.action:</span></p>
+<p class="rvps6"><span class="rvts14">if (data.action.command != 'setValue')</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">callback();</span></p>
+<p class="rvps10"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Et je passe le </span><span class="rvts14">callback</span><span class="rvts6">() comme argument à ma fonction pour pouvoir l'exécuter dans mon tableau de commandes:</span></p>
+<p class="rvps6"><span class="rvts14">var tblCommand = {</span></p>
+<p class="rvps10"><span class="rvts14">'setValue' : function() {setValue(callback);return},</span></p>
+<p class="rvps10"><span class="rvts14">......</span></p>
+<p class="rvps10"><span class="rvts14">........</span></p>
+<p class="rvps6"><span class="rvts14">};</span></p>
+<p class="rvps6"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Et dans ma fonction </span><span class="rvts14">'setValue':</span></p>
+<p class="rvps6"><span class="rvts14">var setValue = function (callback) {</span></p>
+<p class="rvps6"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">/* Do stuff </span></p>
+<p class="rvps11"><span class="rvts14">.........</span></p>
+<p class="rvps10"><span class="rvts14"> &nbsp; &nbsp; var value = ............ ;</span></p>
+<p class="rvps10"><span class="rvts14">*/</span></p>
+<p class="rvps6"><span class="rvts14"><br/></span></p>
+<p class="rvps10"><span class="rvts14">callback({'tts': value});</span></p>
+<p class="rvps6"><span class="rvts14">}</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Retrouvez le même exemple dans le fichier </span><span class="rvts14">scenariz.js</span><span class="rvts6"> et la fonction </span><span class="rvts14">setTime</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Créé avec HelpNDoc Personal Edition: </span><a class="rvts13" href="https://www.helpndoc.com/fr/creer-des-livres-numeriques-epub">Générateur complet de livres électroniques ePub</a></p>
+
+            </div>
+            
+            
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-1.11.3/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+  <script src="vendors/fastclick-1.0.6/fastclick.min.js"></script>
+  <script src="vendors/markjs-8.8.3/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.18.9/uri.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="vendors/bootstrap-3.3.6/js/ie10-viewport-bug-workaround.js"></script>
+  
+  <!-- Headroom -->
+  <script src="vendors/headroom-0.9.3/headroom.min.js"></script>
+  <script src="vendors/headroom-0.9.3/jquery.headroom.min.js"></script>
+
+  <!-- JsTree -->
+  <script src="vendors/jstree-3.3.2/jstree.min.js"></script>
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Scripts -->
+  <script>
+    $(function() {
+      // Instanciate FastClick
+      Origami.fastclick(document.body);
+      // Create the app
+      var app = new Hnd.App();
+      // Update translations
+      hnd_ut(app);
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+
