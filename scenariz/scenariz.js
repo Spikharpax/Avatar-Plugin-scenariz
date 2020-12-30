@@ -7,6 +7,7 @@ const {Graph} = require('cyto-avatar');
 const {remote, ipcRenderer} = require('electron');
 const {BrowserWindow, ipcMain} = remote;
 const cron = require('cron').CronJob;
+const _ = require('underscore');
 let cyto;
 let scenarizWindow;
 let job;
@@ -151,8 +152,9 @@ function windowShow () {
       scenarizWindow.show();
   });
   scenarizWindow.on('closed', () => {
-		ipcMain.removeAllListeners('Scenariz');
+		ipcMain.removeAllListeners('ScenarizMain');
 		ipcMain.removeAllListeners('getScenario');
+		ipcMain.removeAllListeners('getAvatarClients');
 		ipcMain.removeAllListeners('createTask');
 		ipcMain.removeAllListeners('deleteTask');
 		ipcMain.removeAllListeners('testTask');
@@ -161,7 +163,7 @@ function windowShow () {
 		info('Réactivation du cron...');
   });
 
-	ipcMain.on('Scenariz', (event, arg) => {
+	ipcMain.on('ScenarizMain', (event, arg) => {
     switch (arg) {
       case 'quit':
         let state = ipcRenderer.sendSync('removePluginWindowID', scenarizWindow.id);
@@ -177,15 +179,16 @@ function windowShow () {
 			case 'getID':
 				event.returnValue = scenarizWindow.id;
 				break;
-			case 'getClients':
-				event.returnValue = Avatar.Socket.getClients();
-				break;
     }
   })
-	.on('initTest', (event, arg) => {
-		Avatar.speak("Le test a généré une erreur.", arg);
-		event.returnValue = true;
-	})
+	.on('getAvatarClients', (event, arg) => {
+		let clients = Avatar.Socket.getClients();
+		let Clients = ["Pièce courante"];
+		_.each(clients, num => {
+        Clients.push(num.id);
+    });
+		event.returnValue = Clients;
+  })
 	.on('getScenario', (event, arg) => {
 		let scenarizdb = require('./scenarizdb')({});
 		scenarizdb.getScenario(arg, infos => {

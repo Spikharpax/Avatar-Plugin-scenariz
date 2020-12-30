@@ -41,6 +41,9 @@ Il vous permet aussi de gérer ces scénarios par règles vocales:
 
 ***
 ## Historique
+2.1 (30-12-2020)
+- Correction mineure sur la recherche des clients
+
 2.0 (29-12-2020)
 - Interface de création de scénarios avec workflow graphique
 

@@ -8,8 +8,6 @@ const fs = require('fs-extra');
 const moment = require('moment');
 moment.locale('fr');
 
-let initTest;
-
 let nodesize = 45;
 let nodespace = 30;
 
@@ -97,7 +95,7 @@ window.onbeforeunload = (e) => {
 
 
 function close() {
-  let state = ipcRenderer.sendSync('Scenariz', 'quit');
+  let state = ipcRenderer.sendSync('ScenarizMain', 'quit');
 }
 
 
@@ -153,10 +151,6 @@ document.getElementById('testKey').addEventListener('click', function() {
       keys = "client="+client;
   }
 
-  if (!initTest) {
-    initTest = ipcRenderer.sendSync('initTest', client);
-  }
-
   let infos = {plugin: plugin, client: client, keys: keys, speech: document.getElementById("speech").value}
   let value = ipcRenderer.sendSync('testTask', infos);
   switch(value) {
@@ -198,7 +192,7 @@ document.getElementById('deleteprogram').addEventListener('click', function(){
     return;
   }
 
-  let ID = ipcRenderer.sendSync('Scenariz', 'getID');
+  let ID = ipcRenderer.sendSync('ScenarizMain', 'getID');
   let win = BrowserWindow.fromId(ID);
   let options = {
     type: "question",
@@ -315,7 +309,7 @@ document.getElementById('modifyaction').addEventListener('click', function(){
 document.getElementById('removeaction').addEventListener('click', function(){
   if (!WFActionSelected) return;
 
-  let ID = ipcRenderer.sendSync('Scenariz', 'getID');
+  let ID = ipcRenderer.sendSync('ScenarizMain', 'getID');
   let win = BrowserWindow.fromId(ID);
   let options = {
     type: "question",
@@ -1299,7 +1293,7 @@ function getScenario (reset, name, next) {
       })
     })
     .then(() => {
-      let scenarios = ipcRenderer.sendSync('Scenariz', 'getScenarios');
+      let scenarios = ipcRenderer.sendSync('ScenarizMain', 'getScenarios');
       addScenarios(scenarios, name, next);
     })
     .catch(err => {
@@ -1307,7 +1301,7 @@ function getScenario (reset, name, next) {
       notification("Erreur: Impossible d'afficher les scénarios après la suppression");
     })
   } else {
-    let scenarios = ipcRenderer.sendSync('Scenariz', 'getScenarios');
+    let scenarios = ipcRenderer.sendSync('ScenarizMain', 'getScenarios');
     addScenarios(scenarios);
   }
 }
@@ -1380,17 +1374,13 @@ function setClients () {
   })
 
   document.getElementById("selection").toggled = true;
-
 }
 
 
 
 function getClients () {
   return new Promise((resolve, reject) => {
-    let clients = ipcRenderer.sendSync('Scenariz', 'getClients');
-    _.each(clients, num => {
-        Clients.push(num.id);
-    });
+    Clients = ipcRenderer.sendSync('getAvatarClients');
     setClients ();
     resolve();
   })
