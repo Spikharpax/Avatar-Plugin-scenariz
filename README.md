@@ -41,17 +41,16 @@ Il vous permet aussi de gérer ces scénarios par règles vocales:
 
 ***
 ## Historique
-2.1 (30-12-2020)
-- Correction mineure sur la recherche des clients
-
-2.0 (29-12-2020)
-- Interface de création de scénarios avec workflow graphique
-
-1.1 (03-11-2017)
-- Les fichiers intent et action déplacés dans le répertoire du plugin. Chargés automatiquement (Avatar serveur 0.1.5)
-
-1.0 (14-04-2017)
-- Version Released
+* Version 2.2 (03-02-2021)
+	* Ajout des clients mappés dans la liste des clients
+* Version 2.1 (30-12-2020)
+	* Correction mineure sur la recherche des clients
+* Version 2.0 (29-12-2020)
+	* Interface de création de scénarios avec workflow graphique
+* Version 1.1 (03-11-2017)
+	* Les fichiers intent et action déplacés dans le répertoire du plugin. Chargés automatiquement (Avatar serveur 0.1.5)
+* Version 1.0 (14-04-2017)
+	* Released
 
 ***
 ## ★ License

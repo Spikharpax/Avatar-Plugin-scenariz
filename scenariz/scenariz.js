@@ -185,7 +185,15 @@ function windowShow () {
 		let clients = Avatar.Socket.getClients();
 		let Clients = ["Pièce courante"];
 		_.each(clients, num => {
-        Clients.push(num.id);
+			Clients.push(num.id);
+			var even = _.filter(Config.default.mapping, function(mapped){
+	      return mapped.split(',')[1].toLowerCase() == num.id.toLowerCase();
+	    });
+      if (even) {
+          for (let i in even) {
+						Clients.push(even[i].split(',')[0]);
+          }
+      }
     });
 		event.returnValue = Clients;
   })
